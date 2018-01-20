@@ -8,7 +8,7 @@ window.React = require('react');
 class App extends Component {
   render() {
     const tabs = [
-      { title: 'Home', content: (<TabContent>Content 1</TabContent>) },
+      { title: 'Home', content: (<TabContent>Welcome to React sample application.</TabContent>) },
       { title: 'Examples', content: (<TabContent>Content 2</TabContent>) },
       { title: 'Contact', content: (<TabContent>Content 3</TabContent>) }
     ].map(tab => {
@@ -23,17 +23,6 @@ class App extends Component {
         tabs={tabs}
         style={Styles.app.tabStyle}
         labelListStyle={Styles.app.labelListStyle} />
-    );
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
     );
   }
 }
