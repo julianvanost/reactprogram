@@ -7,8 +7,8 @@ window.React = require('react');
 
 class App extends Component {
   render() {
-    const tabs = [
-      { title: 'Home', content: (<TabContent>Welcome to React sample application.</TabContent>) },
+     const tabs = [
+      { title: 'Home', content: (<TabContent>Content 1</TabContent>) },
       { title: 'Examples', content: (<TabContent>Content 2</TabContent>) },
       { title: 'Contact', content: (<TabContent>Content 3</TabContent>) }
     ].map(tab => {
